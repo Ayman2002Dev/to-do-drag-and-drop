@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>ToDoList</title>
-</head>
-<body class="">
-  <div class="toggletheme">
-    <img src="images/moon.png" alt="Moon" data-theme="light">
-  </div>
-  <div class="container">
-
-    <div class="todo-container">
-      <div class="addtask">
-        <input type="text" id="addtask" placeholder="Add Task" autofocus>
-        <button class="add">Add</button>
-      </div>
-      <div class="tasks">
-        <div class="box">
-          <div class="box-header">Tasks</div>
-          <div class="box-content">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ToDoList</title>
+  </head>
+  <body class="">
+    <div class="toggletheme">
+      <img src="images/moon.png" alt="Moon" data-theme="light" />
+    </div>
+    <div class="container">
+      <div class="todo-container">
+        <div class="addtask">
+          <input type="text" id="addtask" placeholder="Add Task" autofocus />
+          <button class="add">Add</button>
+        </div>
+        <div class="tasks">
+          <div class="box" data-status="">
+            <div class="box-header">Tasks</div>
+            <div class="box-content"></div>
+          </div>
+          <div class="box" data-status="pending">
+            <div class="box-header">Pending</div>
+            <div class="box-content"></div>
+          </div>
+          <div class="box" data-status="complete">
+            <div class="box-header">Complete</div>
+            <div class="box-content"></div>
           </div>
         </div>
-        <div class="box">
-          <div class="box-header">Pending</div>
-          <div class="box-content">
-
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-header">Complete</div>
-          <div class="box-content">
-
-          </div>
-        </div>
-
       </div>
     </div>
-  </div>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
